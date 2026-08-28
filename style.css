@@ -102,6 +102,11 @@ body {
   text-align: center;
 }
 
+.section h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  text-align: center;
+}
 .section p {
   margin-bottom: 12px;
   text-align: center;
@@ -165,6 +170,13 @@ body {
 
 
 .menu-item h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  margin: 20px auto;
+}
+
+.menu-item h2 {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 1.1rem;
