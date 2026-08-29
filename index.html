@@ -6,281 +6,212 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- ヘッダー ------------------------------------>
-  <header class="site-header">
-    <div class="logo">Cafe BISCUIT</div>
-    <nav class="nav">
-      <a href="#about"></a>
-      <a href="#menu">ランチ</a>
-      <a href="#drink">ドリンク</a>
-      <a href="#access">アクセス</a>
-    </nav>
-  </header>
+<header class="site-header">
+  <div class="logo">Cafe BISCUIT</div>
+  <nav class="nav">
+    <a href="#menu" class="nav-link" data-tab="lunch">Lunch</a>
+    <a href="#menu" class="nav-link" data-tab="tea">Tea Time</a>
+    <a href="#access">Access</a>
+    <a href="https://www.instagram.com/cafe_biscuit_hidaka/?utm_source=ig_web_button_share_sheet" target="_blank">Instagram</a>
+  </nav>
+</header>
 
-<!-- トップ ------------------------------------>
-  <section class="hero">
-    <div class="hero-inner">
-      <h1>Cafe BISCUIT</h1>
-      <p>こだわりのコーヒーと、ゆったりとした時間をどうぞ。</p>
-      <a href="#menu" class="btn">メニューを見る</a>
-    </div>
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Cafe BISCUIT</h1>
+    <p>こだわりのコーヒーと、ゆったりとした時間をどうぞ。</p>
+  </div>
+</section>
+
+<main>
+
+  <!-- About -->
+  <section id="about" class="section about-with-rabbit">
+    <h2>About</h2>
+    <p>
+      南フランスの石造りの街並みをイメージしたカフェ。<br>
+      レンガの風化やアンティーク調のインテリアまでこだわり、<br>
+      日常を忘れてくつろげる空間をご提供しています。
+    </p>
+
+    <img src="image/tea2.png" alt="紅茶" class="teaset-img">
+    <img src="image/rabbit2.png" alt="ウサギ" class="rabbit-img">
   </section>
 
-<!-- コンセプト -------------------------------->
-  <main>
-    <section id="about" class="section">
-      <h2>カフェビスケットについて</h2>
-      <p>
-        カフェビスケットは「女性の憩いの場」<br>
-        南フランスの街角がモチーフの石造りの外観、レンガの風化などの細部までこだわりの店内で、<br>
-        お客様が日常を忘れてくつろげる空間になっています。
+  <!-- Menu（タブ切り替え） -->
+  <section id="menu" class="section section-alt">
+
+    <div class="menu-heading">
+      <img src="image/line_left.png" alt="" class="menu-line left">
+      <h2 class="menu-title">Menu</h2>
+      <img src="image/line_right.png" alt="" class="menu-line right">
+    </div>
+
+    <!-- タブボタン -->
+    <div class="menu-tabs">
+      <button class="tab-btn active" data-tab="lunch">Lunch</button>
+      <button class="tab-btn" data-tab="drink">Drink</button>
+      <button class="tab-btn" data-tab="tea">Tea Time</button>
+    </div>
+
+    <!-- ランチ -->
+    <div id="lunch" class="tab-content active">
+
+      <p class="menu-info">11:30〜14:00<br>
+        食前酢＋サラダ＋スープ＋ドリンク＋メイン料理
       </p>
-    </section>
 
-<!-- ランチ ------------------------------------>
-    <section id="menu" class="section section-alt">
-      <h2>ランチ</h2>
-      <h3>１１：３０〜１４：００</h3>
-      <h3>すべてのランチに下記が含まれています</h3>
-      <h3>フルーツ食前酢＋サラダ＋スープ＋ドリンク＋メイン料理</h3>
-      <div class="menu-grid">
+      <div class="menu-list">
 
-        <!-- 写真撮れたら
-        <div class="menu-item">
-            <div class="menu-content">
-                <h3>カニクリームパスタ</h3>
-                <p>ずわい蟹をふんだんに使用した濃厚クリームパスタ</p>
-                <span class="price">¥1,300</span>
-            </div>
-            <img img class="menu-image" src="" alt="カニクリームパスタ" />
-        </div>
-        ------------------------------------>
+        <div class="menu-row"><div class="menu-text"><h3>カニクリーム</h3><p>ずわい蟹をふんだんに使用した濃厚クリームパスタ</p></div><span class="price">¥1,300</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>ジェノベーゼ</h3><p>鮮やかなグリーンにバジルの爽やかな香り</p></div><span class="price">¥1,300</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>カポナータ</h3><p>なす、ズッキーニ、パプリカにイタリア産トマトの旨味が詰まったパスタ</p></div><span class="price">¥1,300</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>和風きのこ</h3><p>きのこたっぷりお醤油ベースの和風味</p></div><span class="price">¥1,300</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>ボロネーゼ</h3><p>牛肉とトマトの旨味をぎゅっと閉じ込めたミートソース</p></div><span class="price">¥1,300</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>ビスケット特製キッシュ</h3><p>特製キッシュに自家製ビーフシチュー＋ガーリックトースト付</p></div><span class="price">¥1,300</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>ふんわり卵のオムライス</h3><p>ふんわり卵に自家製ビーフシチューがたっぷり</p></div><span class="price">¥1,400</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>自家製カレー</h3><p>グリルしたチキンとお野菜がたっぷりのカレー</p></div><span class="price">¥1,400</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>自家製焼きカレー</h3><p>自家製カレーにチーズをのせて焼き上げた一品</p></div><span class="price">¥1,400</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>ミートドリア</h3><p>特製ミートソースにたっぷりチーズ、熱々をスキレットで</p></div><span class="price">¥1,400</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>オリジナルピザ</h3><p>トマトベースにガーリックオイルの効いた具沢山ミックスピザ</p></div><span class="price">¥1,500</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>スペイン風パエリア</h3><p>魚介を贅沢に使いお米から炊きあげる本格的な一品<br>（お米から炊きあげますのでお時間が30分以上かかります）</p></div><span class="price">¥1,600</span></div>
 
-        <div class="menu-item">
-          <h3>カニクリーム</h3>
-          <p>ずわい蟹をふんだんに使用した濃厚クリームパスタ</p>
-          <span class="price">¥1,300</span>
-        </div>
-
-        <div class="menu-item">
-          <h3>ジェノベーゼ</h3>
-          <p>鮮やかなグリーンにバジルの爽やかな香り</p>
-          <span class="price">¥1,300</span>
-        </div>
-
-        <div class="menu-item">
-          <h3>カポナータ</h3>
-          <p>なす、ズッキーニ、パプリカにイタリア産トマトの旨味が詰まったパスタ</p>
-          <span class="price">¥1,300</span>
-        </div>
-
-        <div class="menu-item">
-          <h3>和風きのこ</h3>
-          <p>きのこたっぷりお醤油ベースの和風味</p>
-          <span class="price">¥1,300</span>
-        </div>
-
-        <div class="menu-item">
-          <h3>ボロネーゼ</h3>
-          <p>牛肉とトマトの旨味をぎゅっと閉じ込めたミートソース</p>
-          <span class="price">¥1,300</span>
-        </div>
-
-        <div class="menu-item">
-          <h3>ビスケット特製キッシュ</h3>
-          <p>特製キッシュに自家製ビーフシチュー＋ガーリックトースト付</p>
-          <span class="price">¥1,300</span>
-        </div>
-
-        <div class="menu-item">
-          <h3>ふんわり卵のオムライス</h3>
-          <p>ふんわり卵に自家製ビーフシチューがたっぷり</p>
-          <span class="price">¥1,400</span>
-        </div>
-
-        <div class="menu-item">
-          <h3>自家製カレー</h3>
-          <p>グリルしたチキンとお野菜がたっぷりのカレー</p>
-          <span class="price">¥1,400</span>
-        </div>
-
-        <div class="menu-item">
-          <h3>自家製焼きカレー</h3>
-          <p>自家製カレーにチーズをのせて焼き上げた一品</p>
-          <span class="price">¥1,400</span>
-        </div>
-
-        <div class="menu-item">
-          <h3>ミートドリア</h3>
-          <p>特製ミートソースにたっぷりチーズ、熱々をスキレットで</p>
-          <span class="price">¥1,400</span>
-        </div>
-
-        <div class="menu-item">
-          <h3>オリジナルピザ</h3>
-          <p>トマトベースにガーリックオイルの効いた具沢山ミックスピザ</p>
-          <span class="price">¥1,500</span>
-        </div>
-
-        <div class="menu-item">
-          <h3>スペイン風パエリア</h3>
-          <p>魚介を贅沢に使いお米から炊きあげる本格的な一品</p>
-          <p>（お米から炊きあげますのでお時間が30分以上かかります）</p>
-          <span class="price">¥1,600</span>
-        </div>
-        
       </div>
-    </section>
 
-    <!-- ドリンク ------------------------------------>
-      <section id="drink" class="section section-alt">
-        <h2>ドリンク</h2>
-        <div class="menu-grid">
-
-          <div class="menu-item">
-            <h3>ブレンド（HOT）</h3>
-            <p>コク深い当店のオリジナルブレンド</p>
-          </div>
-
-          <div class="menu-item">
-            <h3>アイスコーヒー</h3>
-            <p>３日間かけて抽出した香り豊かなコールドブリュー</p>
-          </div>
-
-          <div class="menu-item">
-            <h3>ダージリン（HOT）</h3>
-            <p>華やかな香りと繊細な味わい</p>
-          </div>
-
-          <div class="menu-item">
-            <h3>アイスティー</h3>
-            <p>柑橘の香りが爽やかなアールグレイ使用。抽出３日のコールドブリュー</p>
-          </div>
-
-          <div class="menu-item">
-            <h3>１００％オレンジジュース</h3>
-          </div>
-
-          <div class="menu-item">
-            <h3>１００％アップルジュース</h3>
-          </div>
-
-
-
-        </div>
-      </section>
-
-          <section id="drink" class="section section-alt">
-            <h2>ハーブティー（HOT）</h2>
-            <h3>お好きなハーブを単品でもブレンドでも。</h3>
-            <h3>おまかせブレンドもございます。
-              体調に合わせてオーダーメイドでお作りすることもできます</h3>
-            <div class="menu-grid">
-
-          <div class="menu-item">
-            <h3>ハーブティー</h3>
-            <p>カモミール</p>
-            <p>ペパーミント</p>
-            <p>ルイボス</p>
-            <p>マルベリーリーフ</p>
-            <p>レモングラス</p>
-            <p>アップルピース</p>
-            <p>ラベンダー</p>
-            <p>ハイビスカス</p>
-            <p>ローズヒップ</p>
-          </div>
-
-          <div class="menu-item">
-            <h3>香りのお茶</h3>
-            <p>アプリコット</p>
-            <p>ピーチ</p>
-            <p>カシス</p>
-            <p>バニラ</p>
-          </div>
-
-          <div class="menu-item">
-            <h3>おまかせブレンド</h3>
-            <p>ビタミンブレンド</p>
-            <p>やすらぎブレンド</p>
-            <p>おつかれブレンド</p>
-            <p>先生ブレンド</p>
-            <p>オーダーメイド（症状別）</p>
-          </div>
-
-        </div>
-      </section>
-
-
-      <!-- ドリンク ------------------------------------>
-      <section id="drink" class="section section-alt">
-        <h2>Other</h2>
-        <div class="menu-grid">
-
-          <div class="menu-item">
-            <h3>本日のケーキ</h3>
-            <p>パティシエの特製ケーキ</p>
-            <p>お持ち帰りもできます</p>
-            <span class="price">¥500</span>
-          </div>
-
-          <div class="menu-item">
-            <h3>ドリンク単品</h3>
-            <p>ケーキとご一緒にどうぞ</p>
-            <span class="price">¥500</span>
-          </div>
-
-          <div class="menu-item">
-            <h3>オリジナルワイン</h3>
-            <p>Biscuit特製オリジナル赤ワイン</p>
-            <span class="price">¥2,800</span>
-          </div>
-
-        </div>
-      </section>
-
-    <!-- ティータイム 
-    <section id="tea" class="section section-alt_2">
-      <h2>ティータイム</h2>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <h3>ハンドドリップコーヒー</h3>
-          <p>丁寧に抽出した一杯。豆は日替わりでご用意しています。</p>
-          <span class="price">¥500</span>
-        </div>
-        <div class="menu-item">
-          <h3>カフェラテ</h3>
-          <p>ミルクたっぷり、やさしい味わいの定番メニュー。</p>
-          <span class="price">¥580</span>
-        </div>
-        <div class="menu-item">
-          <h3>季節のチーズケーキ</h3>
-          <p>旬のフルーツを使った人気のスイーツ。</p>
-          <span class="price">¥650</span>
-        </div>
-        <div class="menu-item">
-          <h3>自家製キッシュ</h3>
-          <p>ランチにもぴったりの軽食メニュー。</p>
-          <span class="price">¥700</span>
-        </div>
+      <!-- Other -->
+      <div class="menu-heading">
+        <img src="image/line_left.png" alt="" class="menu-line left">
+        <h2 class="menu-title">Other</h2>
+        <img src="image/line_right.png" alt="" class="menu-line right">
       </div>
-    </section>
------------------------------------->
 
-    <!-- アクセス ------------------------------------>
-    <section id="access" class="section">
-      <h2>アクセス</h2>
-      <p>〒350-1249 	
-        埼玉県日高市高麗川１-1-15</p>
-      <p>JR川越線・八高線 高麗川駅徒歩1分</p>
-      <p>営業時間：11:30〜18:00（水曜日・木曜日定休）</p>
-    </section>
+      <div class="menu-list">
+        <div class="menu-row"><div class="menu-text"><h3>本日のケーキ</h3><p>パティシエ特製のケーキ</p></div><span class="price">¥500</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>単品ドリンク</h3><p>ケーキとご一緒にどうぞ</p></div><span class="price">¥500</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>オリジナルワイン</h3><p>Biscuit特製オリジナルワイン</p></div><span class="price">¥2,800</span></div>
+      </div>
 
-  </main>
+    </div>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 Café BISCUIT</p>
-  </footer>
+    <!-- ドリンク -->
+<div id="drink" class="tab-content">
+
+  <p class="menu-info">単品：ALL ¥500<br>
+    ランチセット
+  </p>
+
+  <div class="menu-list">
+
+    <div class="menu-row"><div class="menu-text"><h3>ブレンド（HOT）</h3><p>コク深い当店のオリジナルブレンド</p></div></div>
+    <div class="menu-row"><div class="menu-text"><h3>アイスコーヒー</h3><p>３日間かけて抽出した香り豊かなコールドブリュー</p></div></div>
+    <div class="menu-row"><div class="menu-text"><h3>ダージリン（HOT）</h3><p>華やかな香りと繊細な味わい</p></div></div>
+    <div class="menu-row"><div class="menu-text"><h3>アイスティー</h3><p>柑橘の香りが爽やかなアールグレイ使用<br>抽出３日のコールドブリュー</p></div></div>
+  
+    <div class="menu-heading">
+      <img src="image/line_left.png" alt="" class="menu-line left">
+      <h2 class="menu-title">Herb Tea</h2>
+      <img src="image/line_right.png" alt="" class="menu-line right">
+    </div>
+
+    <p class="menu-info">
+    お好きなハーブを単品でもブレンドでも。<br>おまかせブレンドもございます。<br>体調に合わせてオーダーメイドも可能です。</p>
+  
+    <div class="menu-row"><div class="menu-text"><h3>ハーブティ各種</h3><p>カモミール / ペパーミント / ルイボス / マルベリーリーフ / レモングラス / アップルピース / ラベンダー / ハイビスカス / ローズヒップ</p></div></div>
+    <div class="menu-row"><div class="menu-text"><h3>香りのお茶</h3><p>アプリコット / ピーチ / カシス / バニラ</p></div></div>
+    <div class="menu-row"><div class="menu-text"><h3>おまかせブレンド</h3><p>ビタミンブレンド / やすらぎブレンド / おつかれブレンド / 香り４種ブレンド</p></div></div>
+    
+    <div class="menu-heading">
+      <img src="image/line_left.png" alt="" class="menu-line left">
+      <h2 class="menu-title">Juice</h2>
+      <img src="image/line_right.png" alt="" class="menu-line right">
+    </div>
+
+    <div class="menu-row"><div class="menu-text"><h3>100％オレンジジュース</h3></div></div>
+    <div class="menu-row"><div class="menu-text"><h3>100％アップルジュース</h3></div></div>
+
+  </div>
+</div>
+
+    <!-- ティータイム -->
+    <div id="tea" class="tab-content">
+
+      <p class="menu-info">14:00〜16:00（L.O）<br>
+      　</p>
+      <div class="menu-list">
+
+        <div class="menu-row"><div class="menu-text"><h3>本日のケーキ</h3><p>パティシエ特製のケーキ</p></div><span class="price">¥500</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>ドリンク各種</h3><p>ケーキとご一緒にどうぞ</p></div><span class="price">¥500</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>パスタ各種</h3><p>カニクリーム・ジェノベーゼ・カポナータ・和風きのこ・ボロネーゼ</p></div><span class="price">¥1,000</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>ビスケット特製キッシュプレート</h3></div><span class="price">¥1,100</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>ふんわり卵のオムライス</h3></div><span class="price">¥1,200</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>自家製カレー</h3></div><span class="price">¥1,200</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>自家製焼きカレー</h3></div><span class="price">¥1,200</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>ミートドリア</h3></div><span class="price">¥1,200</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>オリジナルピザ</h3></div><span class="price">¥1,500</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>オリジナルサラダ</h3></div><span class="price">¥450</span></div>
+        <div class="menu-row"><div class="menu-text"><h3>ガーリックトースト</h3></div><span class="price">¥550</span></div>
+
+      </div>
+        <div class="menu-heading">
+          <img src="image/line_left.png" alt="" class="menu-line left">
+          <h2 class="menu-title">Alcohol</h2>
+          <img src="image/line_right.png" alt="" class="menu-line right">
+        </div>
+
+        <div class="menu-row"><div class="menu-text"><h3>オリジナルワイン</h3><p>Biscuit特製オリジナルワイン</p></div><span class="price">¥2,800</span></div>
+
+      </div>
+  </section>
+
+
+
+
+
+  <!-- Access -->
+  <section id="access" class="section">
+    <h2>Access</h2>
+    <p>〒350-1249 埼玉県日高市高麗川１-1-15</p>
+    <p>JR川越線・八高線 高麗川駅徒歩1分</p>
+    <p>営業時間：11:30〜18:00（水・木定休）</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Café BISCUIT</p>
+</footer>
+
+<script>
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  function activateTab(tabName) {
+    tabButtons.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.tab === tabName);
+    });
+
+    tabContents.forEach(content => {
+      content.classList.toggle('active', content.id === tabName);
+    });
+  }
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      activateTab(btn.dataset.tab);
+    });
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const tabName = link.dataset.tab;
+      activateTab(tabName);
+    });
+  });
+</script>
+
 </body>
 </html>
